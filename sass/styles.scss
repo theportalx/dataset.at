@@ -71,7 +71,7 @@ $input-shadow: none;
 
 .is-usecase-logo {
   border-radius: 1rem;
-  max-height: 7rem;
+  max-width: 7rem;
   background-color: $primary;
 }
 
@@ -102,7 +102,9 @@ a {
 }
 
 .features {
-  max-width: 17rem;
+  p {
+    max-width: 17rem;
+  }
   img {
     width: 3em;
   }

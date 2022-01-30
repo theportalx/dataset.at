@@ -7887,7 +7887,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .is-usecase-logo {
   border-radius: 1rem;
-  max-height: 7rem;
+  max-width: 7rem;
   background-color: #1278f8; }
 
 .content ul {
@@ -7912,10 +7912,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 a {
   border-radius: 14px !important; }
 
-.features {
+.features p {
   max-width: 17rem; }
-  .features img {
-    width: 3em; }
+
+.features img {
+  width: 3em; }
 
 .icon-button {
   background-color: white;
