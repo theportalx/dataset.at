@@ -67,3 +67,13 @@ document
   .addEventListener("click", function () {
     window.open(baseUrl + "auth/signup", "_blank");
   });
+
+function parallax() {
+  var s = document.getElementById("floater");
+  var yPos = 0 - window.pageYOffset / 45;
+  s.style.top = 25 + yPos + "%";
+}
+
+window.addEventListener("scroll", function () {
+  parallax();
+});
