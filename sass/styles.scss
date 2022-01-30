@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Poppins:ital,wght@100,300,600,800;1,300&display=swap");
+// Set your brand colors
+$blue: #1278f8;
+$grey-dark: #666482;
+$grey-light: #b7b6c6;
+$grey-lighter: #e6e6eb;
+$family-sans-serif: "Poppins", sans-serif;
+
+$primary: $blue;
+$link: $blue;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+$navbar-padding-vertical: 5rem;
+$navbar-height: 5rem;
+$size-1: 5rem;
+$title-weight: bolder;
+$navbar-item-img-max-height: 4rem;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+//classes
+.is-light {
+  color: white;
+}
+
+.floating {
+  top: -1rem;
+  position: absolute;
+  width: 40%;
+  right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .bg-1 {
+    background: url("../assets/images/data-catalog-bg.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30vh !important;
+  }
+  .bg-2 {
+    background: url("../assets/images/bg1.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 30vh !important;
+  }
+}
+.bg-2 {
+  background: url("../assets/images/bg1.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 60vh;
+}
+
+.bg-1 {
+  background: url("../assets/images/data-catalog-bg.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+}
+
+.is-usecase-logo {
+  border-radius: 1rem;
+  max-height: 7rem;
+  background-color: $primary;
+}
+
+.content ul {
+  list-style: none;
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #3288ff, #3dceee, #5837db, #3288ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.field.has-addons .control:first-child:not(:only-child) .button {
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.field.has-addons .control:last-child:not(:only-child) .button {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+a {
+  border-radius: 14px !important;
+}
+
+.features {
+  max-width: 17rem;
+  img {
+    width: 3em;
+  }
+}
+
+.icon-button {
+  background-color: white;
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.6rem;
+}
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.icon-button:hover span {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 3.6rem;
+  margin: -1.8rem;
+}
+
+.twitter span {
+  background-color: #4099ff;
+}
+
+.linkedin span {
+  background-color: #0077b5;
+}
+
+.discord span {
+  background-color: #7289da;
+}
+
+.email span {
+  background-color: $primary;
+}
+
+.medium span {
+  background-color: #00ab6c;
+}
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 3.6rem;
+  left: 0;
+  line-height: 3.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 10;
+}
+
+.icon-button .fa-twitter {
+  color: #4099ff;
+}
+
+.icon-button .fa-linkedin {
+  color: #0077b5;
+}
+
+.icon-button .fa-discord {
+  color: #7289da;
+}
+
+.icon-button .fa-medium {
+  color: #00ab6c;
+}
+
+.icon-button .fa-envelope {
+  color: $primary;
+}
+
+.icon-button:hover .fab,
+.icon-button:hover .far {
+  color: white;
+}
