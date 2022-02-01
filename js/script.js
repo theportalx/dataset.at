@@ -1,4 +1,4 @@
-var words = ["Collaborative", "Trustworthy", "Open", "Enterprise"],
+var words = ["collaborative", "trustworthy", "open", "enterprise"],
   part,
   i = 0,
   offset = 0,
