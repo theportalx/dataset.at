@@ -1,5 +1,5 @@
 @import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
-@import url("https://fonts.googleapis.com/css?family=Poppins:ital,wght@100,300,600,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:ital,wght@100,300,600,800;1,300&display=swap");
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -301,7 +301,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 code,
 pre {
@@ -2090,7 +2090,7 @@ a.tag:hover {
     vertical-align: middle; }
 
 .title {
-  color: #363636;
+  color: black;
   font-size: 2rem;
   font-weight: bolder;
   line-height: 1.125; }
@@ -2100,7 +2100,7 @@ a.tag:hover {
   .title:not(.is-spaced) + .subtitle {
     margin-top: -1.25rem; }
   .title.is-1 {
-    font-size: 5rem; }
+    font-size: 4.75rem; }
   .title.is-2 {
     font-size: 2.5rem; }
   .title.is-3 {
@@ -2125,7 +2125,7 @@ a.tag:hover {
   .subtitle:not(.is-spaced) + .title {
     margin-top: -1.25rem; }
   .subtitle.is-1 {
-    font-size: 5rem; }
+    font-size: 4.75rem; }
   .subtitle.is-2 {
     font-size: 2.5rem; }
   .subtitle.is-3 {
@@ -6713,7 +6713,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding-bottom: auto !important; }
 
 .is-size-1 {
-  font-size: 5rem !important; }
+  font-size: 4.75rem !important; }
 
 .is-size-2 {
   font-size: 2.5rem !important; }
@@ -6735,7 +6735,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 5rem !important; }
+    font-size: 4.75rem !important; }
   .is-size-2-mobile {
     font-size: 2.5rem !important; }
   .is-size-3-mobile {
@@ -6751,7 +6751,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 5rem !important; }
+    font-size: 4.75rem !important; }
   .is-size-2-tablet {
     font-size: 2.5rem !important; }
   .is-size-3-tablet {
@@ -6767,7 +6767,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 5rem !important; }
+    font-size: 4.75rem !important; }
   .is-size-2-touch {
     font-size: 2.5rem !important; }
   .is-size-3-touch {
@@ -6783,7 +6783,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 5rem !important; }
+    font-size: 4.75rem !important; }
   .is-size-2-desktop {
     font-size: 2.5rem !important; }
   .is-size-3-desktop {
@@ -6799,7 +6799,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1216px) {
   .is-size-1-widescreen {
-    font-size: 5rem !important; }
+    font-size: 4.75rem !important; }
   .is-size-2-widescreen {
     font-size: 2.5rem !important; }
   .is-size-3-widescreen {
@@ -6815,7 +6815,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1408px) {
   .is-size-1-fullhd {
-    font-size: 5rem !important; }
+    font-size: 4.75rem !important; }
   .is-size-2-fullhd {
     font-size: 2.5rem !important; }
   .is-size-3-fullhd {
@@ -7016,13 +7016,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Inter", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Inter", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Inter", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -7847,9 +7847,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
-.is-light {
-  color: white; }
 
 .floating {
   top: -1rem;

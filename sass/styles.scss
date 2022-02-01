@@ -1,13 +1,13 @@
 @charset "utf-8";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Poppins:ital,wght@100,300,600,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:ital,wght@100,300,600,800;1,300&display=swap");
 // Set your brand colors
 $blue: #1278f8;
 $grey-dark: #666482;
 $grey-light: #b7b6c6;
 $grey-lighter: #e6e6eb;
-$family-sans-serif: "Poppins", sans-serif;
+$family-sans-serif: "Inter", sans-serif;
 
 $primary: $blue;
 $link: $blue;
@@ -15,10 +15,10 @@ $widescreen-enabled: true;
 $fullhd-enabled: true;
 $navbar-padding-vertical: 5rem;
 $navbar-height: 5rem;
-$size-1: 5rem;
+$size-1: 4.75rem;
 $title-weight: bolder;
 $navbar-item-img-max-height: 4rem;
-
+$title-color: black;
 // Update some of Bulma's component variables
 $control-border-width: 2px;
 $input-border-color: transparent;
@@ -26,9 +26,6 @@ $input-shadow: none;
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass";
 //classes
-.is-light {
-  color: white;
-}
 
 .floating {
   top: -1rem;
