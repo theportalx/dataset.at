@@ -2,8 +2,10 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 // Import a Google Font
 @import url("https://fonts.googleapis.com/css?family=Inter:ital,wght@100,300,600,800;1,300&display=swap");
+
 // Set your brand colors
 $blue: #1278f8;
+$black: #000000;
 $grey-dark: #666482;
 $grey-light: #b7b6c6;
 $grey-lighter: #e6e6eb;
@@ -13,11 +15,15 @@ $primary: $blue;
 $link: $blue;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
+
+//navbar
 $navbar-height: 5.5rem;
+$navbar-background-color: rgba(0, 0, 0, 0.5);
+$navbar-item-img-max-height: 2.5rem;
+
 $size-1: 4.75rem;
 $title-weight: bolder;
-$navbar-item-img-max-height: 2.5rem;
-$title-color: black;
+$title-color: $black;
 // Update some of Bulma's component variables
 $control-border-width: 2px;
 $input-border-color: transparent;
@@ -27,9 +33,9 @@ $input-shadow: none;
 //classes
 
 nav {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  border-bottom: 1px solid $grey-light;
+  backdrop-filter: saturate(180%) blur(5px);
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 
 .floating {
