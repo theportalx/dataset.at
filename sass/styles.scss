@@ -13,11 +13,10 @@ $primary: $blue;
 $link: $blue;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
-$navbar-padding-vertical: 5rem;
-$navbar-height: 5rem;
+$navbar-height: 5.5rem;
 $size-1: 4.75rem;
 $title-weight: bolder;
-$navbar-item-img-max-height: 4rem;
+$navbar-item-img-max-height: 2.5rem;
 $title-color: black;
 // Update some of Bulma's component variables
 $control-border-width: 2px;
@@ -26,6 +25,12 @@ $input-shadow: none;
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass";
 //classes
+
+nav {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-bottom: 1px solid $grey-light;
+}
 
 .floating {
   top: -1rem;
