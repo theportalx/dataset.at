@@ -68,6 +68,12 @@ document
     window.open(baseUrl + "auth/signup", "_blank");
   });
 
+document
+  .querySelector(".early-access-button-bottom")
+  .addEventListener("click", function () {
+    window.open(baseUrl + "auth/signup", "_blank");
+  });
+
 function parallax() {
   var s = document.getElementById("floater");
   var yPos = 0 - window.pageYOffset / 45;
