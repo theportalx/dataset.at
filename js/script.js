@@ -106,4 +106,5 @@ glowCookies.start("en", {
   acceptBtnBackground: "#1278f8",
   rejectBtnBackground: "#e6e6eb;",
   rejectBtnColor: "#666482 ",
+  manageColor: "#000000",
 });
