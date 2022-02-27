@@ -46,6 +46,17 @@ $(document).ready(function () {
 // baseUrl = "http://localhost:4200/"
 baseUrl = "https://app.dataset.at/";
 
+// Return an array of bulmaCollapsible instances (empty if no DOM node found)
+const bulmaCollapsibleInstances = bulmaCollapsible.attach(".is-collapsible");
+
+// Loop into instances
+bulmaCollapsibleInstances.forEach((bulmaCollapsibleInstance) => {
+  new bulmaCollapsible(bulmaCollapsibleInstance);
+
+  // Check if current state is collapsed or not
+  bulmaCollapsibleElement.bulmaCollapsible("close");
+});
+
 if (document.querySelector(".claim-button")) {
   document
     .querySelector(".claim-button")

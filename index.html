@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.6/src/glowCookies.min.js"></script>
+  <script src="./node_modules/@creativebulma/bulma-collapsible/dist/js/bulma-collapsible.min.js"></script>
 </head>
 <body>
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -144,56 +145,78 @@
       </nav>
     </div>
   </section>
-  <section class="section is-white has-text-centered">
-    <div class="container is-max-desktop">
-      <h4 class="title is-spaced is-size-2 is-size-3-mobile squeezed">Who is dataset for?</h4>
-      <div class="card pt-6 pb-6 mb-2">
-        <div class="card-content">
-          <div class="content">
-            <div class="columns is-vcentered">
-              <div class="column is-one-third is-primary">
-                <img class="is-usecase-logo p-4" src="assets/icons/community-edition.png" alt="Community-edition">
-              </div>
-              <div class="column is-two-third">
-                <h2 class="title is-size-4 is-size-5-mobile has-text-black">The global community</h2>
-                <p class="has-text-grey-dark">Curate, Share or access high quality datasets hosted by the global open-source community all-in-one place.</p>
-                <a class="button is-primary is-outlined early-access-button-bottom">Get early access for free</a>
-              </div>
-            </div>
+  <section class="section is-medium is-white has-text-centered">
+    <div id="accordion_1" class="container is-max-desktop">
+      <a href="#collapsible-community-accordion" data-action="collapse" class="level is-radiusless pb-5">
+        <div class="level-left">
+          <div class="level-item">
+            <h2 class="title is-spaced is-size-2 is-size-3-mobile squeezed"><span class="gradient-text">Dataset</span> for community</h2>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <span class="icon has-text-black is-size-3 is-size-4-mobile "><i class="fa fa-angle-right"></i></span>
+          </div>
+        </div>
+      </a>
+      <div class="container is-collapsible"  id="collapsible-community-accordion" data-parent="accordion_1" data-allow-multiple="true">
+        <div class="columns is-vcentered mt-6 pb-6 mb-6 pt-6" >
+          <div class="column is-8 has-text-left">
+            <h3 class="title is-spaced is-size-3 is-size-4-mobile squeezed">Curate, Share or access high quality datasets hosted by the global open-source community all-in-one place.</h3>
+            <a class="button is-primary is-outlined early-access-button-bottom">Get early access for free</a>
+          </div>
+          <div class="column">
+            <img class="is-usecase-logo p-4" src="assets/icons/community-edition.png" alt="Community-edition">
           </div>
         </div>
       </div>
-      <div class="card pt-6 pb-6 mb-2">
-        <div class="card-content">
-          <div class="content">
-            <div class="columns is-vcentered">
-              <div class="column is-one-third is-primary">
-                <img class="is-usecase-logo p-4" src="assets/icons/team-edition.png" alt="Team-edition">
-              </div>
-              <div class="column is-two-third">
-                <h2 class="title is-size-4 is-size-5-mobile has-text-black">The modern data team</h2>
-                <p class="has-text-grey-dark">Spin up virtual workspaces and collaborate effortlessly with team members around any type of data projects with chat, documentation & more built in.</p>  <a class="button is-primary is-outlined" href="https://forms.gle/KtJvVTD4TKMFccWn6">Inquiry pro edition</a>
-              </div>
-            </div>
+      
+      <a href="#collapsible-data-team-accordion" data-action="collapse" class="level is-radiusless pb-5 pt-5">
+        <div class="level-left">
+          <div class="level-item">
+            <h2 class="title is-spaced is-size-2 is-size-3-mobile squeezed"><span class="gradient-text">Dataset</span> for teams</h2>
           </div>
         </div>
+        <div class="level-right">
+          <div class="level-item">
+            <span class="icon has-text-black is-size-3 is-size-4-mobile "><i class="fa fa-angle-right"></i></span>
+          </div>
+        </div>
+      </a>
+      <div class="container is-collapsible"  id="collapsible-data-team-accordion" data-parent="accordion_1" data-allow-multiple="true">
+      <div class="columns is-vcentered mt-6 pb-6 mb-6 pt-6" >
+        <div class="column is-8 has-text-left">
+          <h3 class="title is-spaced is-size-3 is-size-4-mobile squeezed">Spin up virtual workspaces and collaborate effortlessly with team members around any type of data projects with chat, documentation & more built in.</h3>
+          <a class="button is-primary is-outlined" href="https://forms.gle/KtJvVTD4TKMFccWn6">Inquiry pro edition</a>
+        </div>
+        <div class="column">
+          <img class="is-usecase-logo p-4" src="assets/icons/team-edition.png" alt="Team-edition">
+        </div>
       </div>
-      <div class="card pt-6 pb-6">
-        <div class="card-content">
-          <div class="content">
-            <div class="columns is-vcentered">
-              <div class="column is-one-third is-primary">
-                <img class="is-usecase-logo p-4" src="assets/icons/enterprise-edition.png" alt="Enterprise-edition">
-              </div>
-              <div class="column is-two-third">
-                <h2 class="title is-size-4 is-size-5-mobile has-text-black">The enterprise</h2>
-                <p class="has-text-grey-dark">Create sample stores and central data repositories to help
-                  everyone find and access the data they need. Use all of your
-                  organization’s data without having to worry about data quality,
-                  compliance, or data governance ever again.</p>
-                  <a class="button is-primary is-outlined" href="https://forms.gle/KtJvVTD4TKMFccWn6">Inquiry pro edition</a>
-              </div>
-            </div>
+    </div>
+      <a href="#collapsible-enterprise-accordion" data-action="collapse" class="level is-radiusless pb-5 pt-5">
+        <div class="level-left">
+          <div class="level-item">
+            <h2 class="title is-spaced is-size-2 is-size-3-mobile squeezed"><span class="gradient-text">Dataset</span> for enterprise</h2>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <span class="icon has-text-black is-size-3 is-size-4-mobile "><i class="fa fa-angle-right"></i></span>
+          </div>
+        </div>
+      </a>
+      <div class="container is-collapsible"  id="collapsible-enterprise-accordion" data-parent="accordion_1" data-allow-multiple="true">
+        <div class="columns is-vcentered mt-6 pb-6 mb-6 pt-6" >
+          <div class="column is-8 has-text-left">
+            <h3 class="title is-spaced is-size-3 is-size-4-mobile squeezed">Create sample stores and central data repositories to help
+              everyone find and access the data they need. Use all of your
+              organization’s data without having to worry about data quality,
+              compliance, or data governance ever again.</h3>
+            <a class="button is-primary is-outlined" href="https://forms.gle/KtJvVTD4TKMFccWn6">Inquiry pro edition</a>
+          </div>
+          <div class="column">
+            <img class="is-usecase-logo p-4" src="assets/icons/enterprise-edition.png" alt="Enterprise-edition">
           </div>
         </div>
       </div>
@@ -258,7 +281,7 @@
       </div>
     </div>
   </section>
-  <script src="https://dataset.at/js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

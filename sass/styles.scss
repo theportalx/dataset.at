@@ -29,9 +29,11 @@ $title-color: $black;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass";
 //classes
+@import "../node_modules/@creativebulma/bulma-collapsible/src/sass/index.sass";
 
 nav {
   backdrop-filter: saturate(180%) blur(5px);
@@ -43,6 +45,18 @@ nav {
 .level-right > .level-item > i {
   padding: 8px;
   margin-left: 1rem;
+}
+
+#accordion_1 > .level {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#accordion_1 i {
+  transition: transform 0.15s ease-in-out;
+}
+
+#accordion_1 > .is-active i {
+  transform: rotate(90deg);
 }
 
 .divider {
