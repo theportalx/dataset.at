@@ -46,7 +46,7 @@ $(document).ready(function () {
 // baseUrl = "http://localhost:4200/"
 baseUrl = "https://app.dataset.at/";
 
-document.querySelector(".claim-button") ??
+if (document.querySelector(".claim-button")) {
   document
     .querySelector(".claim-button")
     .addEventListener("click", function () {
@@ -55,8 +55,9 @@ document.querySelector(".claim-button") ??
         window.open(baseUrl + "auth/signup?username=" + username, "_blank");
       }
     });
+}
 
-document.querySelector(".footer-claim-button") ??
+if (document.querySelector(".footer-claim-button")) {
   document
     .querySelector(".footer-claim-button")
     .addEventListener("click", function () {
@@ -65,20 +66,23 @@ document.querySelector(".footer-claim-button") ??
         window.open(baseUrl + "auth/signup?username=" + username, "_blank");
       }
     });
+}
 
-document.querySelector(".early-access-button") ??
+if (document.querySelector(".early-access-button")) {
   document
     .querySelector(".early-access-button")
     .addEventListener("click", function () {
       window.open(baseUrl + "auth/signup", "_blank");
     });
+}
 
-document.querySelector(".early-access-button-bottom") ??
+if (document.querySelector(".early-access-button-bottom")) {
   document
     .querySelector(".early-access-button-bottom")
     .addEventListener("click", function () {
       window.open(baseUrl + "auth/signup", "_blank");
     });
+}
 
 function parallax() {
   if (document.getElementById("floater")) {
