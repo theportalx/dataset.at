@@ -93,7 +93,9 @@ function parallax() {
 }
 
 window.addEventListener("scroll", function () {
-  document.getElementById("floater") ?? parallax();
+  if (document.getElementById("floater")) {
+    parallax();
+  }
 });
 
 glowCookies.start("en", {
