@@ -46,17 +46,6 @@ $(document).ready(function () {
 // baseUrl = "http://localhost:4200/"
 baseUrl = "https://app.dataset.at/";
 
-// Return an array of bulmaCollapsible instances (empty if no DOM node found)
-const bulmaCollapsibleInstances = bulmaCollapsible.attach(".is-collapsible");
-
-// Loop into instances
-bulmaCollapsibleInstances.forEach((bulmaCollapsibleInstance) => {
-  new bulmaCollapsible(bulmaCollapsibleInstance);
-
-  // Check if current state is collapsed or not
-  bulmaCollapsibleElement.bulmaCollapsible("close");
-});
-
 if (document.querySelector(".claim-button")) {
   document
     .querySelector(".claim-button")
@@ -119,3 +108,36 @@ glowCookies.start("en", {
   rejectBtnColor: "#666482 ",
   manageColor: "#000000",
 });
+
+const bulmaCollapsibleElement1 = document.getElementById(
+  "collapsible-enterprise-accordion"
+);
+if (bulmaCollapsibleElement1) {
+  // Instanciate bulmaCollapsible component on the node
+  new bulmaCollapsible(bulmaCollapsibleElement1);
+
+  // Call method directly on bulmaCollapsible instance registered on the node
+  bulmaCollapsibleElement1.bulmaCollapsible("collapsed");
+}
+
+const bulmaCollapsibleElement2 = document.getElementById(
+  "collapsible-data-team-accordion"
+);
+if (bulmaCollapsibleElement2) {
+  // Instanciate bulmaCollapsible component on the node
+  new bulmaCollapsible(bulmaCollapsibleElement2);
+
+  // Call method directly on bulmaCollapsible instance registered on the node
+  bulmaCollapsibleElement2.bulmaCollapsible("expand");
+}
+
+const bulmaCollapsibleElement3 = document.getElementById(
+  "collapsible-community-accordion"
+);
+if (bulmaCollapsibleElement3) {
+  // Instanciate bulmaCollapsible component on the node
+  new bulmaCollapsible(bulmaCollapsibleElement3);
+
+  // Call method directly on bulmaCollapsible instance registered on the node
+  bulmaCollapsibleElement3.bulmaCollapsible("collapsed");
+}
