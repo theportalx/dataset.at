@@ -83,3 +83,8 @@ function parallax() {
 window.addEventListener("scroll", function () {
   parallax();
 });
+
+glowCookies.start("en", {
+  style: 1,
+  analytics: "G-XPVSH0E21P",
+});
