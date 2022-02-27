@@ -50,6 +50,10 @@ nav {
   right: 0;
 }
 
+#glowCookies-banner > h3 {
+  font-weight: bolder;
+}
+
 @media screen and (max-width: 800px) {
   .bg-1 {
     background: url("../assets/images/data-catalog-bg.svg");
