@@ -101,7 +101,7 @@ window.addEventListener("scroll", function () {
 glowCookies.start("en", {
   style: 1,
   analytics: "G-XPVSH0E21P",
-  policyLink: "https://google.es",
+  policyLink: "https://dataset.at/assets/files/Dataset_Privacy_Notice.pdf",
   bannerColor: "#000000",
   acceptBtnBackground: "#1278f8",
   rejectBtnBackground: "#e6e6eb;",
