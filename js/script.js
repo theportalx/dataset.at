@@ -46,42 +46,50 @@ $(document).ready(function () {
 // baseUrl = "http://localhost:4200/"
 baseUrl = "https://app.dataset.at/";
 
-document.querySelector(".claim-button").addEventListener("click", function () {
-  var username = document.getElementById("username").value;
-  if (username.length > 3) {
-    window.open(baseUrl + "auth/signup?username=" + username, "_blank");
-  }
-});
+document.querySelector(".claim-button") ??
+  document
+    .querySelector(".claim-button")
+    .addEventListener("click", function () {
+      var username = document.getElementById("username").value;
+      if (username.length > 3) {
+        window.open(baseUrl + "auth/signup?username=" + username, "_blank");
+      }
+    });
 
-document
-  .querySelector(".footer-claim-button")
-  .addEventListener("click", function () {
-    var username = document.getElementById("username2").value;
-    if (username.length > 3) {
-      window.open(baseUrl + "auth/signup?username=" + username, "_blank");
-    }
-  });
+document.querySelector(".footer-claim-button") ??
+  document
+    .querySelector(".footer-claim-button")
+    .addEventListener("click", function () {
+      var username = document.getElementById("username2").value;
+      if (username.length > 3) {
+        window.open(baseUrl + "auth/signup?username=" + username, "_blank");
+      }
+    });
 
-document
-  .querySelector(".early-access-button")
-  .addEventListener("click", function () {
-    window.open(baseUrl + "auth/signup", "_blank");
-  });
+document.querySelector(".early-access-button") ??
+  document
+    .querySelector(".early-access-button")
+    .addEventListener("click", function () {
+      window.open(baseUrl + "auth/signup", "_blank");
+    });
 
-document
-  .querySelector(".early-access-button-bottom")
-  .addEventListener("click", function () {
-    window.open(baseUrl + "auth/signup", "_blank");
-  });
+document.querySelector(".early-access-button-bottom") ??
+  document
+    .querySelector(".early-access-button-bottom")
+    .addEventListener("click", function () {
+      window.open(baseUrl + "auth/signup", "_blank");
+    });
 
 function parallax() {
-  var s = document.getElementById("floater");
-  var yPos = 0 - window.pageYOffset / 45;
-  s.style.top = 55 + yPos + "%";
+  if (document.getElementById("floater")) {
+    var s = document.getElementById("floater");
+    var yPos = 0 - window.pageYOffset / 45;
+    s.style.top = 55 + yPos + "%";
+  }
 }
 
 window.addEventListener("scroll", function () {
-  parallax();
+  idocument.getElementById("floater") ?? parallax();
 });
 
 glowCookies.start("en", {
