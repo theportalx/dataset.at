@@ -7947,8 +7947,12 @@ nav {
 a {
   border-radius: 14px !important; }
 
-.features p {
-  max-width: 17rem; }
-
-.features img {
-  width: 3em; }
+.features .circle {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  vertical-align: center;
+  background-color: #18181a;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
